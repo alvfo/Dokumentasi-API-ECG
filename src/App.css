@@ -1,0 +1,63 @@
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4ff;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  background-color: #00509e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #00509e;
+}
+
+pre {
+  background-color: #e8f1ff;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #00509e;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #00509e;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #00509e;
+  color: white;
+}
+
+.sidebar {
+  width: 250px;
+}
+
+.sidebar .navbar-nav .nav-link {
+  color: #ffffff; /* Text color for nav links */
+}
+
+.sidebar .navbar-nav .nav-link.active {
+  background-color: #00509e; /* Background color for active nav link */
+}
+
+.sidebar .navbar-brand {
+  color: #ffffff; /* Text color for the brand */
+}
+
+.sidebar .navbar-brand:hover {
+  color: #f8f9fa; /* Hover color for the brand */
+}
