@@ -11,9 +11,9 @@ const App = () => {
   useEffect(() => {
     // Untuk menangani perubahan path berdasarkan Nginx config
     if (window.location.pathname === "/api-rest") {
-      window.history.replaceState(null, null, "/rest");
+      window.history.replaceState(null, null, "/api-rest");
     } else if (window.location.pathname === "/api-graphql") {
-      window.history.replaceState(null, null, "/graphql");
+      window.history.replaceState(null, null, "/api-graphql");
     }
   }, []);
 
@@ -30,8 +30,8 @@ const App = () => {
 
         <Container className="p-3">
           <Routes>
-            <Route path="/rest" element={<RestDocumentation />} />
-            <Route path="/graphql" element={<GraphQLDocumentation />} />
+            <Route path="/api-rest" element={<RestDocumentation />} />
+            <Route path="/api-graphql" element={<GraphQLDocumentation />} />
             <Route path="/" element={<RestDocumentation />} />
           </Routes>
         </Container>
