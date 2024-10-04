@@ -1,13 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { Container, Navbar, Nav } from 'react-bootstrap';
+import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// Import komponen dokumentasi
-import RestDocumentation from './rest-documentation.js';
-import GraphQLDocumentation from './graphql-documentation.js';
+import RestDocumentation from './RestDocumentation';
+import GraphQLDocumentation from './GraphQLDocumentation';
 
 const App = () => {
+  useEffect(() => {
+    // Untuk menangani perubahan path berdasarkan Nginx config
+    if (window.location.pathname === "/api-rest") {
+      window.history.replaceState(null, null, "/rest");
+    } else if (window.location.pathname === "/api-graphql") {
+      window.history.replaceState(null, null, "/graphql");
+    }
+  }, []);
+
   return (
     <Router>
       <div className="d-flex">
