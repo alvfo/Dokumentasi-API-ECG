@@ -26,6 +26,10 @@ const RestDocumentation = () => {
           <li>Body:</li>
           <ul>
             <li><strong>patientName</strong> (text): Nama pasien yang ingin diupload data ECG-nya</li>
+            <li><strong>age</strong> (text): Umur pasien yang ingin diupload data ECG-nya</li>
+            <li><strong>gender</strong> (text): Jenis kelamin pasien yang ingin diupload data ECG-nya</li>
+            <li><strong>recordingDate</strong> (text): Tanggal perekaman ECG pasien yang ingin diupload data ECG-nya</li>
+            <li><strong>notes</strong> (text): Catatan pasien yang ingin diupload data ECG-nya</li>
             <li><strong>file</strong> (file): File CSV berisi data ECG yang ingin diupload</li>
           </ul>
         </ul>
